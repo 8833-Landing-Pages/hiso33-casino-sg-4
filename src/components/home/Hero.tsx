@@ -51,9 +51,12 @@ export function Hero() {
             >
               {heroCopy.ctaPrimary}
             </a>
-            <button className="rounded-full border border-gold-400/50 px-6 py-3 font-heading text-sm uppercase tracking-[0.3em] text-gold-200/90">
+            <a
+              href="/register-success"
+              className="rounded-full border border-gold-400/50 px-6 py-3 font-heading text-sm uppercase tracking-[0.3em] text-gold-200/90"
+            >
               {heroCopy.ctaSecondary}
-            </button>
+            </a>
           </div>
         </motion.div>
 

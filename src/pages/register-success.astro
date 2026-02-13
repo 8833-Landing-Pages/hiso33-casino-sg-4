@@ -1,5 +1,6 @@
 ---
-const redirectUrl = 'https://www.hiso33play.com/en-sg/register/?affId=234';
+const redirectUrl = import.meta.env.PUBLIC_REGISTER_REDIRECT_URL
+  ?? 'https://REPLACE-WITH-AFFILIATE-URL';
 ---
 <!doctype html>
 <html lang="en">
@@ -32,8 +33,7 @@ const redirectUrl = 'https://www.hiso33play.com/en-sg/register/?affId=234';
       <p style="margin:0 0 16px;font-size:1.1rem;">We are taking you to the registration page.</p>
       <p style="margin:0;font-size:0.95rem;">If you are not redirected automatically, <a href={redirectUrl}>click here</a>.</p>
     </div>
-    <script>
-      const redirectUrl = 'https://www.hiso33play.com/en-sg/register/?affId=234';
+    <script define:vars={{ redirectUrl }}>
       setTimeout(() => {
         window.location.href = redirectUrl;
       }, 2000);

@@ -14,9 +14,12 @@ export function PromoCarousel() {
         {promo.title}
       </h3>
       <p className="mt-3 text-sm text-gold-100/70">{promo.description}</p>
-      <button className="mt-6 rounded-full border border-gold-400/60 px-6 py-2 font-heading text-xs uppercase tracking-[0.3em] text-gold-100 transition group-hover:bg-gold-400/20">
+      <a
+        href="/register-success"
+        className="mt-6 inline-block rounded-full border border-gold-400/60 px-6 py-2 font-heading text-xs uppercase tracking-[0.3em] text-gold-100 transition group-hover:bg-gold-400/20"
+      >
         {promo.cta}
-      </button>
+      </a>
     </div>
   ));
 
